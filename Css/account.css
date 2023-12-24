@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main-section {
+    width: 80%;
+    /* height: calc(100vh - 84px); */
+    margin: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.main-section .myInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.main-section .myInfo .myAccount div {
+    padding: 20px 20px;
+    color: #fff;
+}
+
+.myCart .items {
+    width: 100%;
+    margin: auto;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 50px;
+}
+
+.myCart .items .items-info {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 270px;
+    border-radius: 20px;
+    margin: 20px 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.myCart .items .items-info img {
+    width: 150px;
+    height: 150px;
+    /* margin-top: 20px; */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.myCart  .items .items-info .items-actions{
+    margin: 5px auto;
+}
+
+.myCart  .items .items-info .items-actions button{
+    font-weight: 700;
+    position: absolute;
+    left: 20px;
+}
+
+.myCart  .items .items-info .items-actions i{
+    position: absolute;
+    right: 20px;
+}
+
+
+.main-section .slider ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    color: #fff;
+    /* justify-content: center; */
+}
+
+.main-section .slider ul li:not(:last-child) {
+    padding-bottom: 40px;
+    cursor: pointer;
+}
+
+.mmain-sectionain .slider ul li {
+    transition: 0.7s ease;
+}
+
+.main-section .slider ul li:hover {
+    transform: scale(1.5);
+}
